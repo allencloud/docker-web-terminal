@@ -1,6 +1,8 @@
 FROM node:latest
 MAINTAINER Vangie Du from Coding IDE Team <duwan@coding.net>
 
+RUN apt-get update && apt-get install -y golang gcc 
+
 EXPOSE 80
 
 ADD *.json index.* ./

@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y wget && \
 	apt-get install -y git vim curl traceroute && \
 	apt-get clean
 
-EXPOSE 80
+EXPOSE 80 81 82
 
 VOLUME ["data","data1","data2"]
 

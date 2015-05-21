@@ -1,7 +1,7 @@
 FROM node:latest
 MAINTAINER Vangie Du from Coding IDE Team <duwan@coding.net>
 
-RUN apt-get update && apt-get install -y golang gcc 
+RUN apt-get update && apt-get install -y golang gcc vim && apt-get clean
 
 EXPOSE 80
 
